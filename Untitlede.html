@@ -784,14 +784,23 @@ hljs.initHighlightingOnLoad();
   <div class="slides">
 
 <section data-state="section" data-transition="default" data-transition-speed="default">
-<h1>Untitlede</h1><p>Risto Kaartinen<br/>13th June</p>
+<h1>Untitlede</h1><p>Risto Kaartinen<br/>13th June 2015</p>
 
 <div class="slideContent" >
-<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<!-- http://codepen.io/ruandre/pen/howFi --> 
 
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/ristokaartinen" data-format="hover" data-related="false"></script>
+<p>
+<a href="mailto:risto.kaartinen@keva.fi" target="_blank" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512" width=8%><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>
+<!--[if lt IE 9]><em>Email</em><![endif]-->
+</a>
+<a href="https://twitter.com/sneik" target="_blank" class="icon-26 twitter" title="Twitter"><svg viewBox="0 0 512 512" width=8%><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg> 
+<!--[if lt IE 9]><em>Twitter</em><![endif]--> 
+</a>
+<a href="https://fi.linkedin.com/in/ristokaartinen" target="_blank" class="icon-17 linkedin" title="LinkedIn"><svg viewBox="0 0 512 512" width=8%><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg>
+<!--[if lt IE 9]><em>LinkedIn</em><![endif]-->
+</a>
 
-<p><a href="https://twitter.com/sneik" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @sneik</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/<sup>http:/.test(d.location)?&#39;http&#39;:&#39;https&#39;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&#39;://platform.twitter.com/widgets.js&#39;;fjs.parentNode.insertBefore(js,fjs);}}(document,</sup> &#39;script&#39;, &#39;twitter-wjs&#39;);</script>&#09;</p>
+</p>
 
 </div>
 
@@ -799,12 +808,6 @@ hljs.initHighlightingOnLoad();
 <section data-transition="default" data-transition-speed="default">
 <h3>First Slide</h3>
 <div class="slideContent" >
-<p>
-<link rel="stylesheet" href="http://i.icomoon.io/public/temp/5215f25b40/UntitledProject/style-svg.css">
-<script src="http://i.icomoon.io/public/temp/5215f25b40/UntitledProject/svgembedder.js"></script>
-
-</p>
-
 <p>For more details on authoring R presentations click the
 <strong>Help</strong> button on the toolbar.</p>
 
@@ -862,6 +865,69 @@ background-image:
    left: 0%;}
 .reveal .slideContent h3{
    left: 0%;}
+   
+.soc {
+  display: block
+  font-size: 0
+  list-style: none
+  margin: 0
+  padding: 32px // IE8
+  padding: 3.2rem
+  text-align: center
+  li
+    display: inline-block
+    margin: 12px // IE8
+    margin: 1.2rem
+  a, svg
+    display: block
+  a
+    position: relative // IE8
+    height: 96px // IE8
+    height: 9.6rem
+    width: 96px // IE8
+    width: 9.6rem
+  svg
+    height: 100%
+    width: 100%
+  // IE8:
+  em
+    font-size: 14px
+    line-height: 1.5
+    margin-top: -.75em
+    position: absolute
+    text-align: center
+    top: 50%
+    right: 0
+    bottom: 0
+    left: 0
+}
+$background: hsl(210, 45, 10)
+
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+  
+html
+  background: $background
+  font-size: .625em // 10px for rems
+
+%social-icon-hover
+  border-radius: 100%
+  color: $background // IE8
+  fill: $background
+  transform: scale(1.25)
+  transition: background-color .5s, transform .5s ease-out
+
+// Neat color trick, <3 Sass
+@for $i from 1 through 29
+  .icon-#{$i}
+    color: hsl($i * 12, 70, 50) // IE8
+    fill: hsl($i * 12, 70, 50)
+    &:hover
+      background: hsl($i * 12, 70, 50)
+      @extend %social-icon-hover
 </style>
 
 </div>
